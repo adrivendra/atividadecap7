@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Projeto Finntech Home</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="homeStyles.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">payments</span> IMPERIUM
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">dashboard</span> Início
+          </li>
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">savings</span> Meu Saldo
+          </li>
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">category</span> Categorias
+          </li>
+          <li class="sidebar-list-item"> 
+            <span class="material-icons-outlined">currency_exchange</span> Meus Gastos
+          </li>
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">fact_check</span> Investimentos
+          </li>
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">poll</span> Meus Gráficos
+          </li>
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">settings</span> Configurações
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <h2>INÍCIO</h2>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>MEU SALDO</h3>
+              <span class="material-icons-outlined">inventory_2</span>
+            </div>
+            <h1>**** R$</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>CATEGORIAS</h3>
+              <span class="material-icons-outlined">category</span>
+            </div>
+            <h1>6</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>MEUS GASTOS</h3>
+              <span class="material-icons-outlined">currency_exchange</span>
+            </div>
+            <h1>**** R$</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>NOTIFICAÇÕES</h3>
+              <span class="material-icons-outlined">notification_important</span>
+            </div>
+            <h1>9</h1>
+          </div>
+
+        </div>
+
+        <div class="charts">
+
+          <div class="charts-card">
+            <h2 class="chart-title">Tendências</h2>
+            <div id="bar-chart"></div>
+          </div>
+
+          <div class="charts-card">
+            <h2 class="chart-title">Comprar IMPERIUM PREMIUM</h2>
+            <div id="area-chart"></div>
+          </div>
+
+        </div>
+      </main>
+      <!-- End Main -->
+
+    </div>
+  </body>
+</html>
